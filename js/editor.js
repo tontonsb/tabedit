@@ -1,4 +1,4 @@
-function displayEditor()  //Zîmç rediìçtâju
+function displayEditor()  //Zï¿½mï¿½ rediï¿½ï¿½tï¿½ju
 {
 	eCTX.clearRect(0,0,editor.width,editor.height);
 	eCTX.beginPath();
@@ -146,7 +146,7 @@ function mouseRelease(e)
 	}
 }
 
-function hasClicked(e)  //Apstrâdâ peles klikðíi
+function hasClicked(e)  //Apstrï¿½dï¿½ peles klikï¿½ï¿½i
 {
 	highlightLine = false;
 	displayEditor();
@@ -280,7 +280,7 @@ function keyboardControl(e)
 		a.lines[editLine-1].bars[editBar-1].beats[editBeat-1].print(editLine,editorPos);
 	}
 
-	if(e.keyCode == 107)  // +
+	if(e.keyCode == 107 || e.keyCode == 187 || e.keyCode == 61)  // +
 	{
 		cellOpen = -1;
 		if (a.lines[editLine-1].bars[editBar-1].beats[editBeat-1].duration > 1)
@@ -291,7 +291,7 @@ function keyboardControl(e)
 		}
 	}
 	
-	if(e.keyCode == 109)  // -
+	if(e.keyCode == 109 || e.keyCode == 189 || e.keyCode == 173)  // -
 	{
 		cellOpen = -1;
 		if (a.lines[editLine-1].bars[editBar-1].beats[editBeat-1].duration < 16)
