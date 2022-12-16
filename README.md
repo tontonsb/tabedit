@@ -21,8 +21,8 @@ I learned most of the JavaScript stuff from some book that
 [@Larzs](https://github.com/Larzs) lent me.
 
 The project is left mostly verbatim as it was in 2013 when I switched computers
-and emailed it to myself for keeping. However I felt the need for a few changes
-here (seen in the latest commits):
+and emailed it to myself for keeping. It was created at some time around 2010.
+However I felt the need for a few changes here (seen in the latest commits):
 
 - disable the backend interactions, because I'm not hosting a server and the
 PHP here is probably the epitome of vulnerability;
