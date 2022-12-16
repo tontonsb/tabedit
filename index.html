@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Tab Editor</title>
+
+<link href="style.css" rel="stylesheet">
+
+<script src="js/parameters.js"></script>
+<script src="js/containers.js"></script>
+<script src="js/display.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/dataExchange.js"></script>
+
+</head>
+
+<body>
+
+<div id="all">
+
+	<header><h1>Tab Editor</h1></header>
+
+	<div id="files">
+		<section class="currentFile">
+			<h2>Current file:</h2>
+			<p id="currentFile"></p>
+			<form id="saveCurrent">
+				<input type="button" onclick="saveChanges()" value="Save Changes" id="saveCF">
+			</form><br><br>
+		</section>
+		
+		<section class="saveFile">
+			<h2>Save as:</h2>
+			<form id="save">
+				<input type="text" id="fileName" size=12>
+				<input type="button" onclick="saveFile()" value="Save" id="saveF">
+			</form>
+		</section>
+
+		<section class="fileManager">
+			<h2>File manager</h2>
+			<form id="fileManager">
+				<select id="fileSelect" size=10></select>
+				<input type="button" onclick="loadFile()" value="Load" id="loadF">
+				<input type="button" onclick="deleteFile()" value="Delete" id="deleteF">
+				<input type="button" onclick="initialize()" value="New File" id="newF">
+			</form>
+	</div>
+
+	<div id="TabEditor">
+		<canvas id="Sheet" width="600" height="600"></canvas>
+		<canvas id="Notes" width="600" height="600"></canvas>
+		<canvas id="Editor" tabindex="1" width="600" height="600">
+		   Your browser does not support the HTML5 canvas tag.</canvas>
+	</div>
+	<script src="js/TabEdit.js"></script>
+
+	<div>
+	buttons
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+div#all
+{
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+header
+{
+	text-align: center;
+	height: 100px;
+}
+
+div#files
+{
+	float: left;
+	width: 200px;
+}
+
+div#TabEditor
+{
+	float: left;
+	position: relative;
+	width: 600px;
+}
+
+div#buttons
+{
+	float: left;
+	width: 200px;
+}
+
+form#save
+{
+	height: 50px;
+}
+
+select
+{
+	float:left;
+}
+
+input
+{
+	float:left;
+}
+
+canvas
+{
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+}
+
+canvas#Sheet
+{
+	z-index: 0;
+	border: 3px solid #666;
+	margin-top: -2px;
+	margin-left: -2px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background-color: #eee;
+}
+
+canvas#Notes
+{
+	z-index: 1;
+	background-color: transparent;
+}
+
+canvas#Editor
+{
+	z-index: 2;
+	background-color: transparent;
+}
