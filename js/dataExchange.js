@@ -1,5 +1,7 @@
 function getFileList()
 {
+	return
+
 	var fileSelect = document.getElementById("fileSelect");
 	fileSelect.innerHTML = "";
 	var req = new XMLHttpRequest();
@@ -17,6 +19,8 @@ function getFileList()
 
 function saveFile()
 {
+	return
+
 	var button = document.getElementById("saveF");
 	button.value = "Saving...";
 	
@@ -46,6 +50,8 @@ function saveFile()
 
 function saveChanges()
 {
+	return
+
 	var button = document.getElementById("saveCF");
 	button.value = "Saving...";
 	var currentFile = document.getElementById("currentFile");
@@ -75,6 +81,8 @@ function saveChanges()
 
 function loadFile()
 {
+	return
+
 	var filename = document.getElementById("fileSelect");
 	var req = new XMLHttpRequest();
 	req.open("GET", "giveFile.php?name="+filename.value,true);
@@ -115,6 +123,8 @@ function loadFile()
 
 function deleteFile()
 {
+	return
+	
 	if (confirm("Da labi?"))
 	{
 		var filename = document.getElementById("fileSelect");
